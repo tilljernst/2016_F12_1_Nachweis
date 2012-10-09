@@ -1,0 +1,67 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  _____   ____  _____                                          %
+% |_   _| /  __||  __ \    Institute of Computitional Physics   %
+%   | |  |  /   | |__) |   Zuercher Hochschule Winterthur       %
+%   | |  | (    |  ___/    (University of Applied Sciences)     %
+%  _| |_ |  \__ | |        8401 Winterthur, Switzerland         %
+% |_____| \____||_|                                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Project     : LaTeX doc Vorlage für Windows ProTeXt mit TexMakerX
+% Title       : 
+% File        : doc.tex Rev. 00
+% Date        : 23.4.12
+% Author      : Remo Ritzmann
+% Feedback bitte an Email: remo.ritzmann@pfunzle.ch
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{header}
+
+\begin{document}
+\title{PA/BA Latex Vorlage}
+\author{Remo Ritzmann}
+
+
+\include{content/titlepage}
+
+\includepdf{images/Erklaerung_BA.pdf} % Entsprechendes auskommentieren
+% \includepdf{images/Erklaerung_PA.pdf}
+
+\setcounter{page}{1}
+%\include{content/Kontakt}
+\include{content/abstract}
+
+%Inhaltsverzeichnis
+\tableofcontents
+\newpage
+
+
+%Kapitel
+%\setcounter{page}{1}
+%\pagenumbering{arabic}
+
+\include{content/howtoLaTeX} % Für das Schlussdokument auskommentieren
+
+\include{content/einleitung}
+\include{content/grundlagen} % (2. Theoretische Grundlagen)
+\include{content/vorgehen} % Vorgehen / Methoden
+\include{content/resultate}
+\include{content/diskussion} % Diskussion und Ausblick
+
+\chapter{Verzeichnisse}\label{chap.verzeichnisse}
+ \include{content/literatur}
+ \listoffigures
+ \addcontentsline{toc}{section}{(Abbildungsverzeichnis)}
+ \listoftables
+ \addcontentsline{toc}{section}{(Tabellenverzeichnis)}
+% \addcontentsline{toc}{chapter}{(Symbolverzeichnis)}
+ \include{content/glossar}
+% \addcontentsline{toc}{section}{(Stichwortverzeichnis)}
+ \lstlistoflistings
+ \addcontentsline{toc}{section}{(Listingverzeichnis)}
+ 
+\include{content/anhang}
+
+
+\end{document}

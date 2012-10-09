@@ -54,7 +54,7 @@ export LC_ALL		?= C
 #
 # If you specify sources here, all other files with the same suffix
 # will be treated as if they were _include_ files.
-#onlysources.tex	?= main.tex
+onlysources.tex	?= doc.tex
 #onlysources.tex.sh	?=
 #onlysources.tex.pl	?=
 #onlysources.tex.py	?=
@@ -68,7 +68,7 @@ export LC_ALL		?= C
 #onlysources.eps	?=
 #
 # If you list files here, they will be treated as _include_ files
-#includes.tex		?= file1.tex file2.tex
+#includes.tex		?= header.tex
 #includes.tex.sh	?=
 #includes.tex.pl	?=
 #includes.tex.py	?=
@@ -83,7 +83,7 @@ export LC_ALL		?= C
 #
 # If you list files or wildcards here, they will *not* be cleaned - default is
 # to allow everything to be cleaned.
-#neverclean		?= *.pdf
+neverclean		?= *.pdf
 #
 # Alternatively (recommended), you can add those lines to a Makefile.ini file
 # and it will get picked up automatically without your having to edit this
