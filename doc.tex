@@ -26,42 +26,53 @@
 \include{content/titlepage}
 
 \includepdf{images/Erklaerung_BA.pdf} % Entsprechendes auskommentieren
-% \includepdf{images/Erklaerung_PA.pdf}
 
-\setcounter{page}{1}
-%\include{content/Kontakt}
+% Vorwort
+\include{content/vorwort}
+
+% Abstract
 \include{content/abstract}
 
-%Inhaltsverzeichnis
+% Inhaltsverzeichnis
+\setcounter{page}{1}
+\pagenumbering{roman}
 \tableofcontents
 \newpage
 
+% Abbildungsverzeichnis
+\listoffigures
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
 
-%Kapitel
-%\setcounter{page}{1}
-%\pagenumbering{arabic}
+% Tabellenverzeichnis
+\listoftables
+\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
+
+% Abkürzungsverzeichnis
+\include{content/glossar}
+
+% Einleitung
+\setcounter{page}{1}
+\pagenumbering{arabic}
+\include{content/einleitung}
+
+% Theoretischer Teil
+\include{content/subjektivesWohlbefinden}
+\include{content/sozialeNetze}
+\include{content/einfluss}
+
+% Diskussion
+\include{content/diskussion}
+
+% Literaturverzeichnis
+\include{content/literatur}
+
+% Anhang
+\include{content/anhang}
 
 \include{content/howtoLaTeX} % Für das Schlussdokument auskommentieren
 
-\include{content/einleitung}
 \include{content/grundlagen} % (2. Theoretische Grundlagen)
 \include{content/vorgehen} % Vorgehen / Methoden
 \include{content/resultate}
-\include{content/diskussion} % Diskussion und Ausblick
-
-\chapter{Verzeichnisse}\label{chap.verzeichnisse}
- \include{content/literatur}
- \listoffigures
- \addcontentsline{toc}{section}{(Abbildungsverzeichnis)}
- \listoftables
- \addcontentsline{toc}{section}{(Tabellenverzeichnis)}
-% \addcontentsline{toc}{chapter}{(Symbolverzeichnis)}
- \include{content/glossar}
-% \addcontentsline{toc}{section}{(Stichwortverzeichnis)}
- \lstlistoflistings
- \addcontentsline{toc}{section}{(Listingverzeichnis)}
- 
-\include{content/anhang}
-
 
 \end{document}
