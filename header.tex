@@ -21,8 +21,11 @@
 	10pt,
 	parskip=half,
 	ngerman,
-	bibtotocnumbered,
-	liststotoc
+	%bibtotocnumbered,
+	bibliography=totocnumbered,
+	listof=totoc,
+	version=first
+	%liststotoc
 ]{scrreprt}
 
 %***********************************************************************
@@ -57,7 +60,7 @@
 \usepackage{float}
 \usepackage{scrhack}
 \usepackage{wallpaper}
-\usepackage{apacite}
+\usepackage[hyper]{apacite}
 
 % Bereitstellung Hyperlinkfunktionen (PDF) (muss als letztes Paket geladen werden)
 \usepackage[
