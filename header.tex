@@ -17,17 +17,20 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[
-	%noapacite,
 	oneside,
 	10pt,
 	parskip=half,
 	ngerman,
 	%bibtotocnumbered,
-	bibliography=totocnumbered,
+	%bibliography=totocnumbered,
 	listof=totoc,
 	version=first
 	%liststotoc
 ]{scrreprt}
+%article scrartcl
+%report scrreprt
+%book scrbook
+%letter scrlttr2
 
 %***********************************************************************
 % include some libs
@@ -43,8 +46,9 @@
 %\usepackage{times}
 %\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
-\usepackage[babel]{csquotes}
+\usepackage{german}
+%\usepackage[ngerman]{babel}
+%\usepackage[babel]{csquotes}
 \usepackage{textcomp}
 \usepackage[squaren]{SIunits}
 \usepackage{graphicx}
@@ -62,8 +66,22 @@
 \usepackage{float}
 \usepackage{scrhack}
 \usepackage{wallpaper}
-%\usepackage[hyper]{apacite}
+\usepackage{apacite}
 \usepackage{titleref}
+
+
+% biblatex-apa
+%\usepackage[style=apa,
+%			backend=biber,
+%			babel=hyphen,
+%			natbib=true
+%			style=authoryear, 
+%    		maxcitenames=2, 
+%    		sorting=nyt,
+%    		backref=true
+%]{biblatex}
+%\DeclareLanguageMapping{ngerman}{{ngerman-apa}} 
+%\addbibresource{Literatur} %for biblatex
 
 % Bereitstellung Hyperlinkfunktionen (PDF) (muss als letztes Paket geladen werden)
 \usepackage[
@@ -80,16 +98,10 @@
 	pdfauthor={Till J. Ernst (ernsttil)}
 ]{hyperref}
 
-%%%% bilatex-apa
-%\usepackage[american]{babel}
-
-\usepackage[style=apa,backend=biber]{biblatex}
-\DeclareLanguageMapping{ngerman}{american-apa}
-\bibliography{Literatur}
-
 % Bereitstellung Glossar
 \usepackage[toc]{glossaries}
 \makeglossaries
+
 
 
 %***********************************************************************
