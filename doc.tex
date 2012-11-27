@@ -28,7 +28,7 @@
 \includepdf{images/Seminararbeit_Bestimmungen.pdf}
 
 % 
-\include{content/acronyms}
+%\include{content/acronyms}
 
 % Vorwort
 \include{content/vorwort}
@@ -52,7 +52,9 @@
 
 % Abkürzungsverzeichnis
 %\include{content/glossar}
-\printglossaries
+\include{content/acronyms}
+\printglossary[title=Abkürzungen] 
+%\printglossary[title=Abkürzungen,toctitle=Stichwortverzeichnis,] 
 
 % Einleitung
 \setcounter{page}{1}
