@@ -21,9 +21,11 @@
 \title{PA/BA Latex Vorlage}
 \author{Till J. Ernst}
 
-\include{content/titlepage}
+%PDF Titelblatt
+\includepdf{images/Seminararbeit_Titelblatt.pdf}
 
-\includepdf{images/Erklaerung_BA.pdf} % Entsprechendes auskommentieren
+%PDF Bestimmungsblatt
+\includepdf{images/Seminararbeit_Bestimmungen.pdf}
 
 % 
 \include{content/acronyms}
@@ -70,6 +72,9 @@
 
 % Anhang
 \include{content/anhang}
+
+% Blatt mit Unterschrift
+\includepdf{images/Seminararbeit_Unterschrift.pdf}
 
 \include{content/howtoLaTeX} % Für das Schlussdokument auskommentieren
 
