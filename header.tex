@@ -136,18 +136,14 @@
 %reference to source items inlc source number
 \newcommand{\srcref}[1]{\nameref{src:#1} \cite{#1}}
 
-%header / footer  -> siehe fancy
-%\renewcommand{\headrulewidth}{0.3pt}
-%\renewcommand{\footrulewidth}{0.3pt}
-
 % Umdefinieren des Layouts (otional)
 % - - - - - - - - - -
 \fancyhf{} %alle Kopf- und Fußzeilenfelder bereinigen
 %\fancyhead[OR,EL]{\rightmark} %die Section-Name
-\fancyhead[OL,ER]{\leftmark} % Chapter-Name
+\fancyhead[L]{\leftmark} % Chapter-Name
+%\fancyhead[OL,ER]{\leftmark} % Chapter-Name -> nur nötig bei 2 Seiten Layout
 \renewcommand{\headrulewidth}{0.3pt}
-\fancyfoot[C]{\textbf \Large \thepage}
-%\fancyfoot[C]{} %clear centered page numbering 
+\fancyfoot[C]{\textbf \Large \thepage} 
 \renewcommand{\footrulewidth}{0pt}
 
 %\fancyhead[LO,RE]{} %clear headings for contents 
