@@ -136,15 +136,25 @@
 %reference to source items inlc source number
 \newcommand{\srcref}[1]{\nameref{src:#1} \cite{#1}}
 
-%header / footer 
-\renewcommand{\headrulewidth}{0.3pt}
-\renewcommand{\footrulewidth}{0.3pt}
+%header / footer  -> siehe fancy
+%\renewcommand{\headrulewidth}{0.3pt}
+%\renewcommand{\footrulewidth}{0.3pt}
 
-\fancyhead[LO,RE]{} %clear headings for contents 
-\fancyhead[RO,LE]{\nouppercase{\rightmark}} %right odd pages and left even pages
-\fancyhead[LO,RE]{\MakeUppercase{\leftmark}} %left odd pages and right even pages
-\fancyfoot[LE,RO]{\thepage} %page numbering
-\fancyfoot[C]{} %clear centered page numbering 
+% Umdefinieren des Layouts (otional)
+% - - - - - - - - - -
+\fancyhf{} %alle Kopf- und Fußzeilenfelder bereinigen
+%\fancyhead[OR,EL]{\rightmark} %die Section-Name
+\fancyhead[OL,ER]{\leftmark} % Chapter-Name
+\renewcommand{\headrulewidth}{0.3pt}
+\fancyfoot[C]{\textbf \Large \thepage}
+%\fancyfoot[C]{} %clear centered page numbering 
+\renewcommand{\footrulewidth}{0pt}
+
+%\fancyhead[LO,RE]{} %clear headings for contents 
+%\fancyhead[RO,LE]{\nouppercase{\rightmark}} %right odd pages and left even pages
+%\fancyhead[LO,RE]{\MakeUppercase{\leftmark}} %left odd pages and right even pages
+%\fancyfoot[LE,RO]{\thepage} %page numbering
+%\fancyfoot[C]{} %clear centered page numbering 
 
 %define some colors
 \definecolor{gray}{rgb}{0.95,0.95,0.95}
