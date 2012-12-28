@@ -128,7 +128,9 @@
 \setlength{\TPHorizModule}{30mm}
 \setlength{\TPVertModule}{\TPHorizModule}
 \textblockorigin{10mm}{10mm} % start everything near the top-left corner
-\setlength{\parindent}{0pt}
+%The \setlength command is used to set the value of a length command, len-cmd, which is specified as the first argument.
+\setlength{\headheight}{28pt}
+\setlength{\parindent}{0pt} % Bei Absatz neuer Einzug
 
 %horizontal lines for titlepage 
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
@@ -145,8 +147,6 @@
 \renewcommand{\headrulewidth}{0.3pt}
 \fancyfoot[C]{\textbf \Large \thepage} 
 \renewcommand{\footrulewidth}{0pt}
-%The \setlength command is used to set the value of a length command, len-cmd, which is specified as the first argument.
-\setlength{\headheight}{28pt}
 
 %\fancyhead[LO,RE]{} %clear headings for contents 
 %\fancyhead[RO,LE]{\nouppercase{\rightmark}} %right odd pages and left even pages
