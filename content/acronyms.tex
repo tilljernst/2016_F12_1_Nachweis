@@ -22,10 +22,26 @@
 \newacronym{hw}{HW}{Habituelles Wohlbefinden}
 
 % Social Media
-\newacronym{sns}{SNS}{Social Networking Sites}
-\newacronym{sn}{SN}{Soziale Netzwerke}
+%\newacronym{sns}{SNS}{Social Networking Sites}
+\newacronym{sn}{SN}{Soziale Netzwerke (engl. Social Networking Sites)}
 \newacronym{cmc}{CMC}{Computer-mediated Communication}
 
 % Einfluss
 \newacronym{cm}{CM}{Concept Map}
+
+\newlength{\acronymlabelwidth}
+\setlength{\acronymlabelwidth}{0.25\textwidth}
+\newglossarystyle{listwithwidth}{%
+  \renewenvironment{theglossary}%
+    {\begin{description}}{\end{description}}%
+  \renewcommand*{\glossaryheader}{}%
+  \renewcommand*{\glsgroupheading}[1]{}%
+  \renewcommand*{\glossaryentryfield}[5]{%
+    \item[\parbox{\acronymlabelwidth}{\glsentryitem{##1}\glstarget{##1}{##2}}]
+       ##3\glspostdescription\space ##5}%
+  \renewcommand*{\glossarysubentryfield}[6]{%
+    \glssubentryitem{##2}%
+    \glstarget{##2}{\strut}##4\glspostdescription\space ##6.}%
+  \renewcommand*{\glsgroupskip}{\indexspace}%
+}
 
