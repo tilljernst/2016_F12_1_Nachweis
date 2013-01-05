@@ -26,14 +26,15 @@
 
 %PDF Bestimmungsblatt
 \includepdf{images/Seminararbeit_Bestimmungen.pdf}
-
+  
 \include{content/acronyms}
-
+  
 % Vorwort
 %\include{content/vorwort}
 
 % Abstract
-\include{content/abstract}
+\pagenumbering{gobble} 
+\include{content/abstract} 
 
 % Inhaltsverzeichnis
 \setcounter{page}{1}
@@ -80,6 +81,6 @@
 % Blatt mit Unterschrift
 \includepdf{images/Seminararbeit_Unterschrift.pdf}
 
-\include{content/howtoLaTeX} % Für das Schlussdokument auskommentieren
+%\include{content/howtoLaTeX} % Für das Schlussdokument auskommentieren
 
 \end{document}
