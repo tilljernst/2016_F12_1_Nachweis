@@ -7,7 +7,7 @@
 %        \/     \/         \/      \/                           
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% Project     : Seminararbeit
+% Project     : Latex Vorlage SemArbeit
 % Title       : 
 % File        : doc.tex Rev. 00
 % Date        : 10.10.2012
@@ -22,10 +22,10 @@
 \author{Till J. Ernst}
 
 %PDF Titelblatt
-\includepdf{images/Seminararbeit_Titelblatt.pdf}
+%\includepdf{images/Seminararbeit_Titelblatt.pdf}
 
 %PDF Bestimmungsblatt
-\includepdf{images/Seminararbeit_Bestimmungen.pdf}
+%\includepdf{images/Seminararbeit_Bestimmungen.pdf}
   
 \include{content/acronyms}
   
@@ -43,13 +43,13 @@
 \newpage
 
 % Abbildungsverzeichnis
-\listoffigures
-\newpage
+%\listoffigures
+%\newpage
 %\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
 
 % Tabellenverzeichnis
-\listoftables
-\newpage
+%\listoftables
+%\newpage
 %\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
 
 % Abkürzungsverzeichnis
@@ -59,19 +59,14 @@
 \glsaddall
 \newpage
 
-
+% Kapitel
+% -----------------------------------
 % Einleitung
 \setcounter{page}{1}
 \pagenumbering{arabic}
 \include{content/einleitung}
 
-% Theoretischer Teil
-\include{content/subjektivesWohlbefinden}
-\include{content/sozialeMedien}
-\include{content/einfluss}
-
-% Diskussion
-\include{content/diskussion}
+% .....
 
 % Literaturverzeichnis
 \include{content/literatur}
