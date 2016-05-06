@@ -18,6 +18,7 @@
 *.pdf
 *.toc
 *.aux
+*.texpadtmp
 
 # Compiled source #
 ###################
